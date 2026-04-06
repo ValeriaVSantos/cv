@@ -1,0 +1,31 @@
+# Hi, I'm Valéria! 👋
+
+### Computational Linguist | PhD Candidate | AI Specialist
+
+I work at the intersection of **Interactional Linguistics** and **Machine Learning**. My research focuses on how spontaneous speech phenomena—like hesitations and disfluencies—impact the reliability and calibration of Large Language Models (LLMs).
+
+---
+
+### 🛠️ What I'm working on
+- **PhD Research:** Developing a functional typology of hesitations for LLM auditing.
+- **Pragmatic Blindness:** Investigating why models become overconfident when faced with human uncertainty markers.
+- **Calibration & Trust:** Using metrics like ECE (Expected Calibration Error) and OE (Overconfidence Error) to evaluate model behavior on naturalistic data (Roda Viva Corpus).
+
+### 🚀 Tech Stack & Tools
+- **Languages:** Python (Pandas, NumPy, Scikit-learn), R, SQL.
+- **NLP & AI:** PyTorch, Hugging Face, Transformers, LLM Evaluation (Llama-3, BERT).
+- **Linguistics:** Corpus Linguistics, Pragmatics, Jeffersonian Transcription, UAM CorpusTool.
+- **Professional:** AI Project Management, Data Curation, Conversational Intelligence.
+
+### 📊 Highlighted Projects
+- [**uncertainty-signature-audit**](link-do-seu-repo): A pilot study auditing LLM calibration through disfluency markers in Brazilian Portuguese.
+- [**Typology-Mapping**](link-do-seu-repo): Automated classification of oral planning markers for dataset enrichment.
+
+---
+
+### 📫 Connect with me
+- 📧 [valeriavsantos93@gmail.com](mailto:valeriavsantos93@gmail.com)
+- 💼 [LinkedIn] https://www.linkedin.com/in/valeriavieira-/
+
+
+*"Bridging the gap between human pragmatic signaling and machine probabilistic confidence."*
