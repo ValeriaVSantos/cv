@@ -1,0 +1,202 @@
+\documentclass[a4paper]{article}
+% --- PACKAGES ---
+\usepackage[english]{babel}
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{supertabular}
+\usepackage{titlesec}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage[style=authoryear,sorting=ynt,maxbibnames=99,dashed=false]{biblatex}
+
+% --- SECTION FORMATTING ---
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+% --- BIBLIOGRAPHY FOR PUBLICATIONS ---
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+% --- HYPERLINKS AND COLORS ---
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+% --- SOCIAL ICONS ---
+\usepackage{fontawesome5}
+
+% --- CUSTOM ENVIRONMENTS ---
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+% Job listing environments
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \textbf{#1} & #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}
+    }
+
+%----------------------------------------------------------------------------------------
+%     START OF DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% No page numbers
+\pagestyle{empty}
+
+%----------------------------------------------------------------------------------------
+%     HEADER
+%----------------------------------------------------------------------------------------
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Valéria Vieira dos Santos} \\[7.5pt]
+\href{https://linkedin.com/in/valeriavieira-}{\raisebox{-0.05\height}\faLinkedin\ /in/valeriavieira-} $|$
+\href{mailto:valeriavsantos93@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ valeriavsantos93@gmail.com} $|$
+\href{tel:+5516988212073}{\raisebox{-0.05\height}\faMobile \ +55 (16) 98821-2073} $|$
+\href{https://github.com/ValeriaVSantos}{\raisebox{-0.05\height}\faGithub\ ValeriaVSantos} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%     PROFESSIONAL PROFILE (REVISED)
+%----------------------------------------------------------------------------------------
+
+\section{Professional Profile}
+PhD Candidate in Linguistics (UFSCar) specializing in LLM evaluation 
+and computational pragmatics, with 6+ years of industry experience 
+in Conversational AI. Research focus: calibration of language models 
+using oral language phenomena as evaluation signal.
+\vspace{5pt}
+
+\textbf{Research Interests:} Computational Linguistics, Natural Language Processing (NLP), Conversational AI, Prompt Engineering, eXplainable AI (XAI) in Social NLP.
+
+%----------------------------------------------------------------------------------------
+%     WORK EXPERIENCE (REVISED QUANTIFICATION)
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+\begin{joblong}{AI Project Manager / Customer Experience Manager -- Serasa Experian, São Paulo, Brazil}{Aug 2022 – Aug 2025}
+\item Achieved a 4.7 CSAT and led digital transformation projects, successfully migrating customer service channels from 80\% voice to 70\% digital, significantly boosting operational efficiency.
+\item Managed the design and implementation of large-scale Conversational AI solutions (chatbots and virtual assistants) to optimize operational efficiency.
+\end{joblong}
+
+\begin{joblong}{Conversational Intelligence Coordinator / Chapter Lead -- Blip, Belo Horizonte, Brazil}{Aug 2021 – Aug 2022}
+\item Led multidisciplinary squads in developing and optimizing AI agents for clients such as Netflix, Claro, and Globoplay.
+\item Responsible for linguistic data curation, definition of intents/entities, and validation of training corpora for NLP systems, with a focus on scalability.
+\end{joblong}
+
+\begin{joblong}{Founder / Conversational AI Specialist -- Langue, São Carlos, Brazil}{2018 – 2021}
+\item Led the development of bespoke chatbot and voicebot solutions for small and medium-sized enterprises.
+\item Responsible for the complete project lifecycle, from initial client consultation and design to deployment and performance analysis.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%     TEACHING & PROFESSIONAL DEVELOPMENT (NEW SECTION)
+%----------------------------------------------------------------------------------------
+
+\section{Teaching \& Professional Development}
+
+\begin{joblong}{Specialization in Didactic-Pedagogical Processes for Distance Learning Courses -- UNIVESP (in partnership with UFSCar)}{Feb 2026 – Est. Duration: 2 years}
+\item Enrolled in Specialization in Distance Education and Pedagogical Practices.
+\item Role as Paid Facilitator: Responsible for mediation, correction, and student support in the Virtual Learning Environment (VLE/AVA), dedicating 12 hours/week (4h theoretical and 8h practical) to teacher training and practice.
+\end{joblong}
+
+\begin{joblong}{Supervised Teaching Capacity Building Internship (PESCD) -- Federal University of São Carlos}{2025}
+\item Teaching Internship in an Undergraduate discipline (Lab 8), focused on Linguistics/Research Area.
+\item Activities: Conducted an expository class, provided direct assistance to students in daily activities, and participated fully in classes, under the supervision of the faculty member in charge.
+\end{joblong}
+
+%----------------------------------------------------------------------------------------
+%     RESEARCH PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Research Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{PhD Research: LLM Calibration \& Hallucination} & \hfill \normalsize{Federal University of São Carlos (UFSCar)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Investigating the correlation between the suppression of pragmatic markers (hesitations) and semantic hallucinations in LLMs (GPT-4, Sabiá-2). Developing a contrastive benchmark using the \textbf{Roda Viva Corpus} to audit model overconfidence through \textbf{Expected Calibration Error (ECE)} and semantic entropy metrics. \textit{(2025 – Present)}}
+\end{tabularx}
+
+\vspace{10pt}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{International Research Intern} & \hfill \normalsize{University of West Bohemia, Czech Republic} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Conducted fundamental research on Prompt Engineering to evaluate the suitability and accuracy of Large Language Models (LLMs) in specialized tasks. Demonstrated strong interdisciplinary research capabilities, connecting linguistic methodologies with technical terminology. \textit{(Jan 2025 – Apr 2025)}}
+\end{tabularx}
+
+\vspace{10pt}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Master's Thesis Research} & \hfill \normalsize{Federal University of São Carlos (UFSCar)} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{Investigated the role of hesitation in human-machine communication, identifying it as a crucial pragmatic marker. The research aimed to model linguistic features that create a sense of "humanity" and coherence in dialogues to improve relational effectiveness. URL: \href{https://repositorio.ufscar.br/items/50de0eca-e5fd-4864-9e18-dcadfdbedce7}{https://repositorio.ufscar.br/items/50de...} \textit{(2023 – 2025)}}
+\end{tabularx}
+
+
+\vspace{10pt}
+
+%----------------------------------------------------------------------------------------
+%     EDUCATION (DEGREES ONLY)
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+2025 - Present & PhD in Linguistics, \textbf{Federal University of São Carlos (UFSCar) - Brazil} \\
+2026 - Present & Specialization in Applied Statistics, \textbf{Anhanguera} \\
+               & \small{Focus: Quantitative methods and statistical modeling for NLP.} \\
+2023 - 2025    & Master of Arts (M.A.) in Linguistics, \textbf{Federal University of São Carlos (UFSCar) - Brazil} \hfill \normalsize{(GPA: 3.8/4.0)} \\
+2019 - 2020    & MBA in Business Management, \textbf{University of São Paulo (USP/ESALQ)} \\
+2015 - 2018    & Bachelor of Arts (B.A.) in Linguistics, \textbf{Federal University of São Carlos (UFSCar) - Brazil} \\
+\end{tabularx}
+
+%------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%     SELECTED PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Selected Publications}
+\nocite{santos2025engineering,santos2025linguasagem,santos2025disfluencies,santos2026lpkm}
+\printbibliography[heading=none]
+
+%----------------------------------------------------------------------------------------
+%     SKILLS (REVISED)
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{AI \& NLP} & \textbf{Statistical Model Evaluation (ECE)}, LLM Benchmarking, Prompt Engineering (Expert), Natural Language Inference (NLI), Computational Pragmatics, Linguistic Data Strategy. \\
+\textbf{Tools} & Dialogflow, Rasa, Microsoft Bot Framework, TensorFlow, PyTorch, Scikit-Learn, \textbf{Statsmodels, SciPy}. \\
+\textbf{Programming} & \textbf{Python (Pandas, NumPy, Matplotlib, Seaborn)}: Advanced data analysis, statistical scripting for NLP, and automated evaluation pipelines. \\
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%     LANGUAGES (NEW SECTION)
+%----------------------------------------------------------------------------------------
+\section{Languages}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Proficiency} & Portuguese (Native), English (Fluent --- TOEIC 755), Spanish (Advanced), French (Intermediate).\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%     REFERENCES
+%----------------------------------------------------------------------------------------
+\section{References}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+\textbf{Prof. Dr. Oto Araújo do Vale} & \normalsize{PhD's Thesis Advisor, UFSCar, \href{mailto:otovale@ufscar.br}{otovale@ufscar.br}}  \\
+\textbf{Prof. Ing. Miroslav Malaga, Ph.D.} & \normalsize{Research Internship Supervisor, University of West Bohemia, \href{mailto:malaga@kpv.zcu.cz}{malaga@kpv.zcu.cz}} \\
+\textbf{Renato Ciccarelli} & \normalsize{Customer Care Director, Serasa Experian, \href{mailto:renato.ciccarelli@experian.com}{renato.ciccarelli@experian.com}} \\
+\end{tabularx}
+
+\vfill
+
+\end{document}
